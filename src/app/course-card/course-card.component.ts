@@ -25,6 +25,10 @@ export class CourseCardComponent implements OnInit {
     ngOnInit(): void {
     }
 
+    isImageVisible() {
+        return this.course && this.course.iconUrl && this.course.iconUrl.length > 0;
+    }
+
     onCourseViewed() {
         alert("onCourseViewed Works");
 
