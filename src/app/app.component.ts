@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {COURSES} from '../db-data';
+import { Course } from './model/course';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +10,10 @@ import {COURSES} from '../db-data';
 export class AppComponent {
     
     coreCourse = COURSES[0];
+
+    onCourseSelected(course:Course) {
+        alert("onCourseSelected Works");
+        console.log(course);
+    }
 
 }
