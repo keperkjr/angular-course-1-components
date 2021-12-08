@@ -9,7 +9,7 @@ import { Course } from './model/course';
 })
 export class AppComponent {
     
-    coreCourse = COURSES[0];
+    courses = COURSES;    
 
     onCourseSelected(course:Course) {
         alert("onCourseSelected Works");
