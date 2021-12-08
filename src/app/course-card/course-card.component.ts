@@ -25,6 +25,13 @@ export class CourseCardComponent implements OnInit {
     ngOnInit(): void {
     }
 
+    cardStyles() {
+        return {
+            'text-decoration': 'underline',
+            // 'background-image': 'url('+ this.course.iconUrl +')'
+        };
+    }
+
     cardClasses() {
         // return {
         //     'beginner': this.course.category == 'BEGINNER'
